@@ -24,7 +24,7 @@ export default async (req, res) => {
     // Issues with permissions look at this guide: https://leerob.io/snippets/google-sheets
     const response = await sheets.spreadsheets.values.get({
       spreadsheetId: "1YN3P0lcR1gCcrAFvZZmOCniNZ0TeuYSyxCxTQoruNKs",
-      range: "Designers", // sheet name
+      range: "Médicos", // sheet name
     });
 
     //TODO: Map the collum to object name automatically.
